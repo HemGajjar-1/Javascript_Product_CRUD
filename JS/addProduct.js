@@ -43,6 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
     fileInput.addEventListener("change", function () {
         const file = this.files[0];
         if (file) {
+            const errorElement = document.querySelector(".p-img-error");
+            if (!file.type.startsWith("image/")) {
+                errorElement.innerHTML = "Only image files are allowed (jpg, png, jpeg, webp)";
+                this.value = "";
+                previewImg.classList.add("d-none");
+                return;
+            }
             if (file.size > 5 * 1024 * 1024) {
                 document.querySelector(".p-img-error").innerHTML = "Image must be less than 5MB";
                 this.value = "";
