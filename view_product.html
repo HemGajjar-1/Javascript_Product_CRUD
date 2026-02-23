@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/mystyle.css">
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class=" m-auto d-flex">
+            <img src="Images/apple_logo.png" style="width: 60px; height: 60px;" class="me-1" alt="">
+            <h1 class="text-light m-auto">iManage</h1>
+        </div>
+    </nav>
+    <div class="container-fluid vh-100 p-2 d-flex align-items-center flex-column ">
+        <h1 class="my-4">Add Product</h1>
+        <div class="p-4 w-50">
+            <div class="card p-4 rounded-3 border border-dark shadow-lg d-flex flex-column flex-lg-row ">
+                <div class="mb-3 mb-lg-0 me-4 align-self-center border border-1 border-dark rounded-3 shadow-lg ">
+                    <img id="p-img" style="width: 250px;height: 250px;" src="ProductImage/demo.jpg" class="rounded-3 "
+                        alt="">
+                </div>
+                <div class="border border-1 border-dark rounded-4 w-100 p-4 shadow-sm bg-light">
+
+                    <div class="mb-3">
+                        <span class="fw-semibold text-muted">Product ID</span>
+                        <h5 class="fw-bold mb-0" id="p-id"></h5>
+                    </div>
+                    <div class="mb-3">
+                        <span class="fw-semibold text-muted">Product Name</span>
+                        <h5 class="fw-bold mb-0" id="p-name"></h5>
+                    </div>
+
+                    <div class="mb-3">
+                        <span class="fw-semibold text-muted">Description</span>
+                        <p id="p-desc" class="mb-0" style="text-align: justify;">
+                        </p>
+                    </div>
+                    <div class="mb-2">
+                        <span class="fw-semibold text-muted">Price</span>
+                        <h5 class="text-dark fw-bold mb-0" id="p-price"></h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-dark" style="width: 100px;" onclick="goToHome()">Back</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/viewProduct.js"></script>
+</body>
+
+</html>
