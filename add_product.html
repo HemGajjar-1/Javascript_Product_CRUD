@@ -19,65 +19,69 @@
 
         </div>
     </nav>
-    <div class="container-fluid  p-2 d-flex align-items-center flex-column ">
-        <h1 class="my-4">Add Product</h1>
-        <div class="border border-2 border-dark rounded-4 w-50 p-4">
-            <div id="alert-container">
-            </div>
-            <form id="productForm" novalidate>
-                <div class="mb-3">
-                    <label for="p_name" class="form-label">
-                        Product Name
-                    </label>
-                    <input type="text" class="form-control shadow-none border border-dark rounded-2" id="p_name"
-                        placeholder="Enter Product Name" required>
-                    <span class="p-name-error d-block pt-1 text-danger"></span>
-                </div>
-                <div class="mb-3">
-                    <label for="p_img" class="form-label">
-                        Product Image URL
-                    </label>
-                    <div class="d-flex flex-column">
-                        <div class="">
-                            <input class="form-control shadow-none border border-dark rounded-2" type="file"
-                                id="formFile">
+    <div class="container my-4">
+        <h1 class="text-center">Add Product</h1>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                <div class="border border-2 border-dark rounded-4 p-4">
+                    <div id="alert-container">
+                    </div>
+                    <form id="productForm" novalidate>
+                        <div class="mb-3">
+                            <label for="p_name" class="form-label">
+                                Product Name
+                            </label>
+                            <input type="text" class="form-control shadow-none border border-dark rounded-2" id="p_name"
+                                placeholder="Enter Product Name" required>
+                            <span class="p-name-error d-block pt-1 text-danger"></span>
                         </div>
-                        <span class="p-img-error d-block pt-1 text-danger"></span>
-                        <img id="imagePreview" src="/ProductImage/demo.jpg" class="img-thumbnail d-none"
-                            style="height:150px;width: 170px;margin: auto;">
-                    </div>
-                </div>
-                <div class="mb-3 text-center">
-                </div>
-                <div class="mb-3">
-                    <label for="p_price" class="form-label">
-                        Product Price
-                    </label>
-                    <div class="input-group">
-                        <span class="input-group-text border border-dark ">₹</span>
-                        <input type="number" class="form-control shadow-none border border-dark " id="p_price"
-                            placeholder="Enter Price" min="0" required>
-                    </div>
-                    <span class="p-price-error d-block pt-1 text-danger"></span>
-                </div>
-                <div class="mb-3">
-                    <label for="p_desc" class="form-label">
-                        Product Description
-                    </label>
-                    <textarea class="form-control shadow-none border border-dark " id="p_desc" rows="3"
-                        placeholder="Enter Product Description" required></textarea>
-                    <span class="p-desc-error d-block pt-1 text-danger"></span>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <a href="index.html" class="btn btn-dark">
-                        Cancel
-                    </a>
-                    <button type="submit" class="btn btn-dark">
-                        Save Product
-                    </button>
-                </div>
+                        <div class="mb-3">
+                            <label for="p_img" class="form-label">
+                                Product Image URL
+                            </label>
+                            <div class="d-flex flex-column">
+                                <div class="">
+                                    <input class="form-control shadow-none border border-dark rounded-2" type="file"
+                                        id="formFile">
+                                </div>
+                                <span class="p-img-error d-block pt-1 text-danger"></span>
+                                <img id="imagePreview" src="/ProductImage/demo.jpg" class="img-thumbnail d-none"
+                                    style="height:150px;width: 170px;margin: auto;">
+                            </div>
+                        </div>
+                        <div class="mb-3 text-center">
+                        </div>
+                        <div class="mb-3">
+                            <label for="p_price" class="form-label">
+                                Product Price
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-text border border-dark ">₹</span>
+                                <input type="number" class="form-control shadow-none border border-dark " id="p_price"
+                                    placeholder="Enter Price" min="0" required>
+                            </div>
+                            <span class="p-price-error d-block pt-1 text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="p_desc" class="form-label">
+                                Product Description
+                            </label>
+                            <textarea class="form-control shadow-none border border-dark " id="p_desc" rows="3"
+                                placeholder="Enter Product Description" required></textarea>
+                            <span class="p-desc-error d-block pt-1 text-danger"></span>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row justify-content-between gap-2">
+                            <a href="index.html" class="btn btn-dark">
+                                Cancel
+                            </a>
+                            <button type="submit" class="btn btn-dark">
+                                Save Product
+                            </button>
+                        </div>
 
-            </form>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

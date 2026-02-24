@@ -44,25 +44,34 @@
         </div>
         <div id="alert-container">
         </div>
-        <div class="row align-items-center g-2 mb-3">
-            <div class="col-12 col-md-2">
+        <div class="row my-2">
+            <div class="col-12">
+                <input type="text" id="searchInput" class="form-control border border-1 border-dark"
+                    placeholder="Search Product">
+            </div>
+        </div>
+        <div class="row align-items-center g-2 my-2">
+
+
+            <div class="col-12 col-md-3">
                 <button type="button" class="btn btn-dark w-100" onclick="goToAdd()">
                     Add Product
                 </button>
             </div>
-            <div class="col-12 col-md-6">
-                <input type="text" id="searchInput" class="form-control border border-1 border-dark"
-                    placeholder="Search Product">
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="d-flex flex-wrap align-items-center justify-content-md-end gap-2">
+
+
+            <div class="col-12 col-md-9">
+                <div class="d-flex flex-wrap align-items-center gap-2">
                     <span class="fw-semibold">Sort By:</span>
+
                     <button type="button" class="btn btn-outline-dark btn-sm" onclick="sortProducts('id')">
                         ID
                     </button>
+
                     <button type="button" class="btn btn-outline-dark btn-sm" onclick="sortProducts('name')">
                         Name
                     </button>
+
                     <button type="button" class="btn btn-outline-dark btn-sm" onclick="sortProducts('price')">
                         Price
                     </button>
