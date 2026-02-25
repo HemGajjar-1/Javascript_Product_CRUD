@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderProducts();
 })
 function addDemoProducts() {
+
     renderProducts();
     let p1 = {
         "p_id": product_list.length == 0 ? 1 : product_list[product_list.length - 1].p_id + 1,
@@ -41,6 +42,12 @@ function addDemoProducts() {
     renderProducts();
     location.reload();
 
+}
+function clearRecords() {
+    product_list = []
+    localStorage.setItem("products", JSON.stringify(product_list));
+    renderProducts();
+    location.reload();
 }
 function renderProducts() {
 
